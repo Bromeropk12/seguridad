@@ -46,6 +46,7 @@ En esta versión, se aplican estrictas medidas de seguridad basadas en el **OWAS
 - **Mensajería en Tiempo Real:** Un feed global que se actualiza constantemente. Publica desde un navegador y velo aparecer al instante en el otro mediante *short-polling*.
 - **Radar de Usuarios:** Sistema de *Heartbeat* que muestra qué usuarios están conectados ahora mismo y en qué modo (vulnerable o seguro) están navegando.
 - **Panel de Administración Dinámico:** Un dashboard que revela crudas realidades en su versión vulnerable, y restringe el acceso como debe ser en su versión segura.
+- **Cambio de Contraseña Segura (`/seguro/cambiar-password`):** Ruta exclusiva del modo seguro. Al cambiar la contraseña, **solo se actualiza `perfiles_seguros`**. Las tablas quedan desincronizadas intencionalmente. Cualquier intento de saltar del modo vulnerable al seguro lanzará un modal exigiendo la nueva contraseña segura — demostrando que la separación de credenciales es una defensa real.
 
 ---
 
