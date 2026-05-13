@@ -78,8 +78,7 @@ next-env.d.ts
 # ===========================================
 # TAILWIND (archivos generados)
 # ===========================================
-tailwind.config.ts
-postcss.config.mjs
+# Eliminados tailwind.config.ts y postcss.config.mjs de aqui para que Vercel pueda leerlos
 
 # ===========================================
 # TEMPORALES / Temporary
