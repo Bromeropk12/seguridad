@@ -47,10 +47,12 @@ export default function VulnerableFeed() {
 
     const heartbeatInterval = setInterval(() => sendHeartbeat(user), 10000);
     const usersInterval = setInterval(fetchConnectedUsers, 10000);
+    const messagesInterval = setInterval(fetchMessages, 3000); // Polling de mensajes cada 3s
 
     return () => {
       clearInterval(heartbeatInterval);
       clearInterval(usersInterval);
+      clearInterval(messagesInterval);
       if (user?.id) {
         fetch("/api/heartbeat", {
           method: "DELETE",
