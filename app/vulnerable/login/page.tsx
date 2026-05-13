@@ -111,8 +111,7 @@ export default function VulnerableLogin() {
               <span className="text-red-400 font-semibold text-sm">Modo Vulnerable</span>
             </div>
             <p className="text-red-300/70 text-xs">
-              Las contrasenas se almacenan en texto plano - No usar en produccion
-            </p>
+              Las contrasenas se almacenan en texto plano</p>
           </div>
 
           {isLogin ? (
