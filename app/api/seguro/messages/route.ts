@@ -1,13 +1,9 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
-import createDOMPurify from "dompurify";
-import { JSDOM } from "jsdom";
+import DOMPurify from "isomorphic-dompurify";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
-
-const window = new JSDOM("").window;
-const DOMPurify = createDOMPurify(window);
 
 function sanitizeContent(content: string): string {
   return DOMPurify.sanitize(content, {

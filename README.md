@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://www.uan.edu.co/" alt="Logo" width="100" />
   <h1>🛡️ Cyber-Lab: Seguridad Web Educativa</h1>
   <p><em>Un "Mini-Twitter" interactivo diseñado para enseñar ciberseguridad mediante la comparación de código vulnerable y código seguro bajo los estándares de OWASP.</em></p>
 
